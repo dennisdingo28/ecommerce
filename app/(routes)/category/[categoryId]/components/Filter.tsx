@@ -48,7 +48,7 @@ const Filter:React.FC<FilterProps> = ({data,name,valueKey}) =>{
             <div className="flex flex-wrap gap-2">
                 {data.map((filter)=>(
                     <div className="flex items-center" key={filter.id}>
-                        <Button className={cn("rounded-md text-sm text-gray-800 p-2 bg-white border border-gray-300",selectedValue === filter.id && "bg-black text-whtie")}>
+                        <Button onClick={()=>onClick(filter.id)} className={cn("rounded-md text-sm text-gray-800 p-2 bg-white border border-gray-300",selectedValue === filter.id && "bg-black text-white")}>
                             {filter.name}
                         </Button>
                     </div>

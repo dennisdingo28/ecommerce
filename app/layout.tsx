@@ -11,6 +11,8 @@ export const metadata = {
   title:"Store",
   description:"Store",
 }
+export const dynamic = "force-dynamic"
+export const fetchCache = "force-no-store"
 
 export default function RootLayout({
   children,
